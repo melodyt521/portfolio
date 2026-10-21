@@ -1,0 +1,2 @@
+import { type Project } from '@/data/projects';
+export function ProjectArtwork({ project }: { project: Project }) { return <div className="project-artwork" role="img" aria-label={`Illustrative album cover for ${project.name}. Final project imagery forthcoming.`}><span className="eyebrow">MELODY TAI / SELECTED WORK</span><div className="album-disc" aria-hidden="true"/><div className="album-title"><span className="eyebrow">{project.category}</span><strong>{project.name}</strong><p>{project.caption}</p></div><small>ILLUSTRATIVE COVER · FINAL VISUALS TO COME</small></div>; }

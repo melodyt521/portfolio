@@ -1,0 +1,111 @@
+{
+  "custom-group-post": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/094efa9a-7d3b-40a3-9ac1-0e9ca6c0545c/Custom+Group+Post.png",
+    "width": 1077,
+    "height": 2200,
+    "bytes": 370830
+  },
+  "audience-preview": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/9f6ec2b8-4d5d-453e-96fa-ab66b823614f/Audience+popup.png",
+    "width": 1800,
+    "height": 2178,
+    "bytes": 508296
+  },
+  "affinity-diagram": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/679735ee-1518-4add-aeb9-86ee172676e4/affinity+diagram.jpg",
+    "width": 1800,
+    "height": 1081,
+    "bytes": 83188
+  },
+  "pain-points": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/a1eec92e-7681-4f24-8f18-4ad2795f9a4f/Pain+Points+Chart.png",
+    "width": 1800,
+    "height": 1281,
+    "bytes": 132956
+  },
+  "core-features": {
+    "source": "/Users/Melody/Desktop/portfolio/Instagram Redesign/core feature.png",
+    "width": 2214,
+    "height": 512,
+    "bytes": 168892,
+    "encoding": "lossless WebP; original transparency preserved"
+  },
+  "custom-groups": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/df44b2f2-c4ac-490c-9031-8a365da1aede/Group+135.png",
+    "width": 513,
+    "height": 415,
+    "bytes": 86800
+  },
+  "add-group": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/c58f95eb-8c9c-4c03-ac45-09492a1d6df3/Add+custom+groups.png",
+    "width": 1093,
+    "height": 2200,
+    "bytes": 309024
+  },
+  "name-group": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/8c6276ab-23cf-4841-bc9a-b6fe9acfe977/Add+custom+groups+NAMED.png",
+    "width": 1100,
+    "height": 2200,
+    "bytes": 349568
+  },
+  "story": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/1784a202-23e5-4e09-94d1-7e44858c3522/Story.png",
+    "width": 1100,
+    "height": 2200,
+    "bytes": 494938
+  },
+  "share-story": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/a4cc85b0-4225-4d5d-a06b-2e4c67b1e37e/Group+134.png",
+    "width": 513,
+    "height": 600,
+    "bytes": 109950
+  },
+  "story-audience": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/4fd47ace-ada2-4bd1-82a1-1c2edd994070/Group+133.png",
+    "width": 604,
+    "height": 513,
+    "bytes": 113492
+  },
+  "home": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/f5ed56c5-f6be-4f3e-baa0-5aa349ad09b5/Home.jpg",
+    "width": 1354,
+    "height": 2200,
+    "bytes": 153368
+  },
+  "post-audience": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/db0202b2-0d75-420b-a3ba-5b70e898e99a/Audience+popup.png",
+    "width": 1800,
+    "height": 2166,
+    "bytes": 528168
+  },
+  "comment-comparison": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/f67f4d3d-05bf-448a-8844-bb95062cb4b5/ab+test.png",
+    "width": 1800,
+    "height": 1788,
+    "bytes": 219952
+  },
+  "comment-chat": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/7f410b57-705a-4c0d-a9b7-9d4097df83b5/Share+comment+chat.png",
+    "width": 1093,
+    "height": 2200,
+    "bytes": 350940
+  },
+  "comment-sharing": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/08714092-9f90-4b66-9312-048ce9dc24fc/Comment+Pop+Up+-+Text.png",
+    "width": 1498,
+    "height": 2200,
+    "bytes": 355640
+  },
+  "browsing-history": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/477adcba-44c6-44cb-a37e-6dffa4779dd4/history.png",
+    "width": 1100,
+    "height": 2200,
+    "bytes": 325388
+  },
+  "history-search": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/a1ec85e4-f1ef-4563-a85b-d23d63718757/Search+Bar.png",
+    "width": 1800,
+    "height": 1446,
+    "bytes": 411350
+  }
+}

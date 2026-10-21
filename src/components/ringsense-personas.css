@@ -1,0 +1,63 @@
+.rp-personas{margin-top:32px;--rp-silver:color-mix(in srgb,var(--surface) 60%,var(--paper))}
+.rp-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-block:1px solid var(--line);margin-bottom:32px}
+.rp-tabs button{display:flex;gap:12px;align-items:center;text-align:left;padding:18px 12px;border:0;border-bottom:2px solid transparent;background:transparent;color:var(--ink);cursor:pointer;min-width:0}
+.rp-tabs button[aria-selected=true]{background:var(--accent-tint);border-bottom-color:var(--accent)}
+.rp-tab-index{font:10px var(--font-mono);color:var(--muted)}
+.rp-tabs strong{display:block;font-size:16px;font-weight:500;line-height:1.4}
+.rp-tabs small{display:block;font-size:11px;line-height:1.5;color:var(--muted);margin-top:4px}
+.rp-personas button:focus-visible,.rp-background summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.rp-profile{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:32px;padding-bottom:28px}
+.rp-identity{display:flex;gap:20px;align-items:center}
+.rp-portrait{position:relative;display:block;width:96px;height:96px;flex-shrink:0}
+.rp-portrait svg{width:100%;height:100%;display:block;border:1px solid var(--line-strong);border-radius:4px}
+.rp-portrait-backdrop{fill:var(--surface)}
+.rp-portrait-shirt{fill:var(--accent)}
+.rp-portrait-skin{fill:#e0d6cc;stroke:#555a60;stroke-width:1}
+.rp-portrait-hair{fill:#32383e}
+.rp-portrait-gray{fill:#8c949c}
+.rp-portrait-feature{fill:none;stroke:#343a40;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.rp-portrait-seam{fill:none;stroke:#17191c;stroke-width:1;opacity:.4}
+.rp-portrait-number{position:absolute;bottom:-5px;right:-5px;padding:5px 6px;background:var(--paper);border:1px solid var(--line-strong);border-radius:3px;font:9px var(--font-mono);color:var(--ink)}
+.rp-kicker{display:flex;gap:7px;align-items:center;font:10px/1.6 var(--font-mono);letter-spacing:.05em;color:var(--muted)}
+.rp-identity h3{font-size:26px;line-height:1.2;font-weight:500;letter-spacing:-.045em;margin:9px 0!important}
+.rs-case .rp-panel p{font-size:14px;line-height:1.75;max-width:none;margin:0;color:var(--ink-soft)}
+.rp-context{font:10px/1.5 var(--font-mono);color:var(--muted);display:block;margin-top:8px}
+.rp-intro h4{font-size:25px;line-height:1.25;letter-spacing:-.04em;font-weight:500;margin:0 0 14px}
+.rp-background{padding:14px 0;border-block:1px solid var(--line);font-size:12px;color:var(--muted)}
+.rp-background summary{cursor:pointer;width:fit-content}
+.rs-case .rp-background p{font-size:13px;margin-top:12px}
+.rp-goals{display:grid;grid-template-columns:1fr 1fr;gap:32px;padding:24px 0 32px}
+.rp-goals .rp-kicker,.rp-details .rp-kicker{margin-bottom:10px}
+.rp-story-heading{display:flex;align-items:center;justify-content:space-between;gap:18px;border-top:1px solid var(--line);padding-top:28px}
+.rp-story-heading h4{font-weight:500;font-size:22px;letter-spacing:-.035em;line-height:1.3;margin:8px 0 0}
+.rp-perspectives{display:flex;border:1px solid var(--line-strong);border-radius:4px;padding:3px;flex-shrink:0;gap:3px}
+.rp-perspectives button{font-size:11px;padding:8px 10px;border:0;background:transparent;color:var(--ink);border-radius:2px;cursor:pointer}
+.rp-perspectives button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.rs-case .rp-panel .rp-perspective-note{font-size:12px;color:var(--muted);margin:14px 0 18px}
+.rp-storyboard{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;list-style:none;padding:0;margin:0}
+.rp-storyboard>li{min-width:0;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.rp-storyboard>li>div{padding:16px}
+.rp-frame-index{font:9px var(--font-mono);color:var(--muted)}
+.rp-storyboard h5{font-size:17px;font-weight:500;letter-spacing:-.025em;margin:7px 0 10px}
+.rs-case .rp-storyboard p{font-size:12px;line-height:1.7}
+.rp-scene{display:block;width:100%;height:auto;background:linear-gradient(145deg,var(--paper),var(--rp-silver));border-bottom:1px solid var(--line)}
+.rp-scene-line,.rp-scene-faint,.rp-scene-accent,.rp-scene-camera{fill:none;stroke:var(--ink-soft);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.rp-scene-faint{stroke:var(--line-strong);stroke-width:1.3}
+.rp-scene-device{fill:var(--paper);stroke:var(--ink-soft);stroke-width:1.5}
+.rp-scene-accent{stroke:var(--accent-deep);stroke-width:2}
+.rp-scene-accent-fill{fill:var(--accent)}
+.rp-scene-control{fill:var(--surface);stroke:var(--line-strong);stroke-width:1}
+.rp-scene-faint-fill{fill:var(--line-strong)}
+.rp-scene-camera{stroke:var(--accent-deep);stroke-width:1.2;stroke-dasharray:3 5;opacity:.6}
+.rp-scene-check{fill:none;stroke:#17191c;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.rp-scene-question{fill:var(--muted);font:24px var(--font-mono);text-anchor:middle}
+.rp-details{display:grid;grid-template-columns:1fr 1fr;gap:32px;padding:28px 0}
+.rp-details ul{padding-left:18px;margin:0;font-size:13px;color:var(--ink-soft);line-height:1.8}
+.rp-details li{padding:2px 0}
+.rp-constraint{margin-top:20px}
+.rp-channel{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;padding:18px 0;border-block:1px solid var(--line)}
+.rp-channel>span:not(.rp-kicker){display:flex;align-items:center;gap:7px;font-size:11px;color:var(--ink-soft)}
+.rs-case .rp-panel .rp-assumption{font-size:11px;color:var(--muted);margin-top:16px}
+@media(max-width:1000px){.rp-profile{grid-template-columns:1fr;gap:24px}.rp-identity h3{font-size:28px}.rp-story-heading{align-items:flex-start;flex-direction:column}}
+@media(max-width:600px){.rp-tabs{grid-template-columns:1fr 1fr}.rp-tabs button{padding:14px 10px}.rp-goals,.rp-details{grid-template-columns:1fr;gap:22px}.rp-storyboard{grid-template-columns:1fr;gap:16px}.rp-storyboard>li{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1fr);align-items:center}.rp-storyboard .rp-scene{border-bottom:0;min-height:145px;height:100%;object-fit:contain}.rp-storyboard>li>div{padding:14px}.rp-portrait{width:80px;height:80px}.rp-identity{gap:16px}.rp-identity h3{font-size:25px}.rp-intro h4{font-size:24px}}
+@media(max-width:380px){.rp-storyboard>li{grid-template-columns:1fr}.rp-storyboard .rp-scene{min-height:0;height:auto}.rp-tabs button{gap:8px}}

@@ -1,0 +1,16 @@
+.about-section.about-profile{display:block;padding-top:72px;padding-bottom:48px}
+.about-profile-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;border-top:1px solid var(--line-strong);padding-top:22px;margin-bottom:32px}
+.about-section.about-profile .about-profile-heading h2{font:11px/1.6 var(--font-mono),monospace;letter-spacing:1.4px;margin:0}
+.about-profile-heading>span{font:10px/1.6 var(--font-mono),monospace;letter-spacing:1px;color:var(--muted)}
+.about-profile-intro{font-size:clamp(23px,2.5vw,34px);line-height:1.5;letter-spacing:-.025em;max-width:1100px;color:var(--ink);text-wrap:pretty}
+.about-profile-stories{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(32px,7vw,112px);margin-top:48px}
+.about-profile-stories>div{border-top:1px solid var(--line);padding-top:22px}
+.about-profile-index{font:10px/1.6 var(--font-mono),monospace;letter-spacing:1px;color:var(--muted)}
+.about-profile-stories h3{font-size:25px;letter-spacing:-.035em;margin:12px 0 16px}
+.about-profile-stories p{font-size:16px;line-height:1.85;color:var(--ink-soft);max-width:62ch}
+.about-profile-education{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(32px,7vw,112px);padding-top:32px;margin-top:40px;border-top:1px solid var(--line)}
+.about-profile-education .eyebrow{color:var(--muted);font-size:9px}
+.about-profile-education h3{font-size:20px;letter-spacing:-.025em;margin:10px 0 8px}
+.about-profile-education p{font-size:13px;line-height:1.7;color:var(--muted)}
+@media(max-width:767px){.about-section.about-profile{padding-top:44px;padding-bottom:32px}.about-profile-heading{margin-bottom:24px}.about-profile-heading>span{font-size:8px;letter-spacing:.5px}.about-profile-intro{font-size:23px;line-height:1.6}.about-profile-stories{grid-template-columns:1fr;gap:28px;margin-top:32px}.about-profile-stories p{font-size:15px}.about-profile-education{grid-template-columns:1fr 1fr;gap:24px;margin-top:32px}.about-profile-education h3{font-size:18px}}
+@media(max-width:380px){.about-profile-heading{align-items:flex-start;flex-direction:column;gap:8px}.about-profile-education{grid-template-columns:1fr}}

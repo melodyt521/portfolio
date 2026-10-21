@@ -1,0 +1,6 @@
+@media (hover:hover) and (pointer:fine){
+  html,html body,html body *{
+    cursor:url('/images/hand-cursor.svg') 13 3,pointer !important;
+  }
+  html body :is(input,textarea,[contenteditable=true]){cursor:text !important}
+}

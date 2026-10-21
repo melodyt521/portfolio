@@ -1,0 +1,59 @@
+.experience-section{padding:56px 0 24px;scroll-margin-top:90px}
+.experience-section.section-shell{padding:48px 24px 64px}
+.experience-heading{margin-bottom:28px}
+.experience-heading .eyebrow{color:var(--muted)}
+.experience-heading h2{font-size:clamp(30px,3vw,42px);letter-spacing:-.04em;margin-top:10px;line-height:1.15}
+.experience-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr) 140px;gap:40px;align-items:center;border-top:1px solid var(--line);padding:30px 0}
+.experience-row:last-child{border-bottom:1px solid var(--line)}
+.experience-date{font:11px/1.7 var(--font-mono);color:var(--muted)}
+.experience-row h3{font-size:28px;letter-spacing:-.035em;margin:8px 0}
+.experience-role,.experience-summary{font-size:14px;line-height:1.8;color:var(--ink-soft)}
+.experience-cta{display:flex;align-items:center;gap:18px;font-size:12px;white-space:nowrap}
+.experience-row:hover .experience-cta{color:var(--accent-deep)}
+.internship-page{padding-top:40px;padding-bottom:72px}
+.internship-header{padding:52px 0 44px}
+.internship-header h1{font-size:clamp(48px,7vw,96px);line-height:1.05;letter-spacing:-.06em;margin:18px 0 24px;overflow-wrap:anywhere}
+.internship-header>p{font-size:clamp(18px,2vw,24px);line-height:1.6;color:var(--ink-soft);max-width:48ch}
+.internship-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;margin:36px 0 0;padding-top:24px;border-top:1px solid var(--line)}
+.internship-facts dt{font:11px var(--font-mono);color:var(--muted);margin-bottom:8px}
+.internship-facts dd{font-size:14px;line-height:1.7;margin:0}
+.internship-figure{margin:32px 0}
+.internship-figure img{display:block;width:100%;height:auto;border-radius:4px}
+.internship-page>.internship-figure{background:var(--surface);padding:24px;border-radius:4px;margin:0 0 56px}
+.internship-page>.internship-figure img{max-height:620px;object-fit:contain}
+.internship-figure figcaption{font-size:13px;line-height:1.7;color:var(--muted);margin-top:12px}
+.internship-body{display:grid;grid-template-columns:190px minmax(0,900px);gap:clamp(32px,5vw,80px);justify-content:space-between}
+.internship-body>div{min-width:0}
+.internship-contents{position:sticky;top:100px;align-self:start;display:grid;gap:6px;border-left:1px solid var(--line);padding-left:16px}
+.internship-contents .eyebrow{font-size:9px;color:var(--muted);margin-bottom:12px}
+.internship-contents a{font-size:12px;line-height:1.6;padding:7px 0;color:var(--ink-soft)}
+.internship-contents a:hover{color:var(--accent-deep)}
+.internship-section{padding:40px 0 48px;border-bottom:1px solid var(--line);scroll-margin-top:90px}
+.internship-section:first-child{padding-top:0}
+.internship-section>.eyebrow{color:var(--muted)}
+.internship-section h2{font-size:clamp(28px,3vw,40px);line-height:1.2;letter-spacing:-.035em;margin:16px 0 24px;max-width:27ch}
+.internship-section p{font-size:17px;line-height:1.9;color:var(--ink-soft);max-width:72ch;margin-top:18px}
+.internship-moments{margin:32px 0}
+.internship-moments summary{cursor:pointer;font-size:20px;padding:20px 0}
+.internship-moments summary span{font-size:12px;color:var(--muted);margin-left:12px}
+.internship-moments>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.internship-moments .internship-figure{margin:0}
+.internship-moments img{aspect-ratio:3/4;object-fit:cover}
+.internship-next{display:block;margin-top:64px;border-top:1px solid var(--line);padding-top:24px}
+.internship-next>span:last-child{display:flex;align-items:center;justify-content:space-between;font-size:clamp(28px,4vw,48px);letter-spacing:-.035em;margin-top:16px}
+@media(max-width:900px){.experience-row{grid-template-columns:1fr 1fr;gap:20px}.experience-cta{grid-column:2}.internship-body{grid-template-columns:150px minmax(0,1fr);gap:28px}}
+@media(max-width:767px){.experience-section{padding-top:40px}.experience-section.section-shell{padding:36px 20px}.experience-row{grid-template-columns:1fr;gap:16px;padding:26px 0}.experience-cta{grid-column:auto}.experience-summary{max-width:45ch}.internship-header{padding-top:36px}.internship-page>.internship-figure{padding:12px;margin-bottom:32px}.internship-body{grid-template-columns:1fr;gap:32px}.internship-contents{position:static;display:flex;flex-wrap:wrap;gap:8px 20px;border:0;padding:0 0 20px;border-bottom:1px solid var(--line)}.internship-contents .eyebrow{width:100%;margin:0}.internship-section p{font-size:16px}.internship-moments>div{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+
+.internship-page>.internship-logo{display:flex;align-items:center;justify-content:center;min-height:320px;background:#fff;padding:64px 32px}
+.internship-page>.internship-logo img{width:min(100%,460px);height:auto;border-radius:0}
+@media(max-width:767px){.internship-page>.internship-logo{min-height:220px;padding:48px 28px}}
+
+/* Float the existing transparent brand artwork directly on the page. */
+.internship-page>.crypto-brand-art{background:none;padding:24px 0 40px;margin-bottom:56px;perspective:1100px;overflow:visible}
+.crypto-brand-object{position:relative;width:min(100%,640px);margin:auto;transform-style:preserve-3d;transform:rotateX(5deg) rotateY(-10deg);transition:transform .65s cubic-bezier(.2,.7,.2,1)}
+.crypto-brand-object>.image-zoom-trigger{display:block;position:relative;transform:translateZ(7px);filter:drop-shadow(0 24px 18px #17191c25)}
+.internship-page>.crypto-brand-art img{width:100%;height:auto;max-height:none;object-fit:contain;border-radius:0}
+.crypto-brand-depth{position:absolute;inset:0;transform:translate3d(5px,6px,-7px);filter:brightness(.45) saturate(.6);pointer-events:none}
+@media(hover:hover){.crypto-brand-art:hover .crypto-brand-object{transform:translateY(-7px) rotateX(1deg) rotateY(7deg)}}
+@media(max-width:767px){.internship-page>.crypto-brand-art{padding:12px 8px 24px;margin-bottom:32px}.crypto-brand-object{width:min(100%,460px);transform:rotateX(3deg) rotateY(-5deg)}}
+@media(prefers-reduced-motion:reduce){.crypto-brand-object{transition:none}.crypto-brand-art:hover .crypto-brand-object{transform:rotateX(5deg) rotateY(-10deg)}}

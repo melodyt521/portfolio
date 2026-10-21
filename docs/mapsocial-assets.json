@@ -1,0 +1,170 @@
+{
+  "hero": {
+    "source": "/Users/Melody/Desktop/MapSocial/iPhone 14 Pro Max.png",
+    "width": 2400,
+    "height": 1800,
+    "bytes": 561130
+  },
+  "overview": {
+    "source": "/Users/Melody/Desktop/MapSocial/Frame 64.png",
+    "width": 2400,
+    "height": 1393,
+    "bytes": 333252
+  },
+  "homepage": {
+    "source": "/Users/Melody/Desktop/MapSocial/Homepage.png",
+    "width": 673,
+    "height": 2000,
+    "bytes": 244740
+  },
+  "category": {
+    "source": "/Users/Melody/Desktop/MapSocial/Student Orgs - All Events.png",
+    "width": 1011,
+    "height": 2000,
+    "bytes": 315604
+  },
+  "map": {
+    "source": "/Users/Melody/Desktop/MapSocial/Event - Map.png",
+    "width": 996,
+    "height": 2000,
+    "bytes": 271000
+  },
+  "create-event": {
+    "source": "/Users/Melody/Desktop/MapSocial/Create Event 2.png",
+    "width": 1007,
+    "height": 2000,
+    "bytes": 311642
+  },
+  "saved-events": {
+    "source": "/Users/Melody/Desktop/MapSocial/Profile - Interested.png",
+    "width": 666,
+    "height": 2000,
+    "bytes": 82158
+  },
+  "onboarding": {
+    "source": "/Users/Melody/Desktop/MapSocial/Onboarding 3.png",
+    "width": 924,
+    "height": 2000,
+    "bytes": 62286
+  },
+  "homepage-comparison": {
+    "source": "/Users/Melody/Desktop/MapSocial/ab.png",
+    "width": 2400,
+    "height": 1338,
+    "bytes": 195998
+  },
+  "persona-alex": {
+    "source": "/Users/Melody/Desktop/MapSocial/Alex.png",
+    "width": 1600,
+    "height": 763,
+    "bytes": 81502
+  },
+  "persona-emily": {
+    "source": "/Users/Melody/Desktop/MapSocial/Emily.png",
+    "width": 1600,
+    "height": 763,
+    "bytes": 79964
+  },
+  "insights": {
+    "source": "/Users/Melody/Desktop/MapSocial/Insights - features.png",
+    "width": 2400,
+    "height": 1509,
+    "bytes": 228200
+  },
+  "competitive-analysis": {
+    "source": "/Users/Melody/Desktop/MapSocial/comp ana.png",
+    "width": 2400,
+    "height": 1501,
+    "bytes": 131994
+  },
+  "survey": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/4d70ac01-7105-4a27-8181-d183a7d99c30/Screenshot+2023-12-06+at+10.34.49%E2%80%AFAM.png",
+    "width": 2266,
+    "height": 1600,
+    "bytes": 46284
+  },
+  "storyboard-1": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/6fad04eb-cfed-4fce-bacf-8aefac815dd7/A4+-+1.png",
+    "width": 1612,
+    "height": 3200,
+    "bytes": 103210
+  },
+  "storyboard-2": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/de99787f-75cc-4e94-a249-a59fc428374a/A4+-+2.png",
+    "width": 1612,
+    "height": 3200,
+    "bytes": 110720
+  },
+  "map-markers": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/6a55a3ca-3c22-4a4e-94eb-4aaa6c97f94e/Frame+80.png",
+    "width": 1097,
+    "height": 1192,
+    "bytes": 283372
+  },
+  "filter-save": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/07bf2893-48d7-4a4f-be47-1c364a61033e/Frame+81.png",
+    "width": 1720,
+    "height": 1312,
+    "bytes": 181878
+  },
+  "design-system": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/8b2b0691-9440-441b-84a5-c4ad9164ed95/Design+System.png",
+    "width": 2400,
+    "height": 1977,
+    "bytes": 388646
+  },
+  "ucsd-seal": {
+    "source": "https://images.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/6994c6c2-337f-49d0-8407-3a285e227ef6/Seal_of_the_University_of_California%2C_San_Diego.svg.png",
+    "width": 1200,
+    "height": 1200,
+    "bytes": 165906
+  },
+  "campus-context-1": {
+    "source": "/Users/Melody/Desktop/MapSocial/UC Socially Deadd.png",
+    "width": 2400,
+    "height": 1703,
+    "bytes": 534756
+  },
+  "campus-context-2": {
+    "source": "/Users/Melody/Desktop/MapSocial/UC Socially Dead.png",
+    "width": 2400,
+    "height": 2225,
+    "bytes": 579084
+  },
+  "core-features": {
+    "source": "/Users/Melody/Desktop/MapSocial/Frame 17124.png",
+    "width": 2400,
+    "height": 1469,
+    "bytes": 397804
+  },
+  "sketches": {
+    "source": "/Users/Melody/Desktop/MapSocial/map social redesign-1 4 1.png",
+    "width": 2400,
+    "height": 1710,
+    "bytes": 206522
+  },
+  "category-overview": {
+    "source": "/Users/Melody/Desktop/MapSocial/Frame 79.png",
+    "width": 1337,
+    "height": 2400,
+    "bytes": 334540
+  },
+  "onboarding-1": {
+    "source": "/Users/Melody/Desktop/MapSocial/Onboarding 1.png",
+    "width": 1109,
+    "height": 2400,
+    "bytes": 70332
+  },
+  "onboarding-2": {
+    "source": "/Users/Melody/Desktop/MapSocial/Onboarding 2.png",
+    "width": 1109,
+    "height": 2400,
+    "bytes": 90132
+  },
+  "onboarding-3": {
+    "source": "/Users/Melody/Desktop/MapSocial/Onboarding 3.png",
+    "width": 1109,
+    "height": 2400,
+    "bytes": 82958
+  }
+}

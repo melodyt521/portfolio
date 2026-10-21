@@ -1,0 +1,50 @@
+{
+  "onboarding": {
+    "source": "https://video.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/276306be-3f02-4e2a-bfd0-9ea05aa7b20e/playlist.m3u8",
+    "duration": 7.05,
+    "webBytes": 339540,
+    "width": 540,
+    "height": 1018,
+    "background": "CSS alpha mask removes only white connected to frame edges; interior UI preserved"
+  },
+  "homepage": {
+    "source": "https://video.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/85a71682-bb0d-4195-a9e1-144eb97d8bc3/playlist.m3u8",
+    "duration": 6.2,
+    "webBytes": 279853,
+    "width": 540,
+    "height": 1070,
+    "background": "CSS alpha mask removes only white connected to frame edges; interior UI preserved"
+  },
+  "category": {
+    "source": "https://video.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/31e6b2e0-4a62-4af5-802a-517dd5094549/playlist.m3u8",
+    "duration": 5.766667,
+    "webBytes": 307336,
+    "width": 540,
+    "height": 1070,
+    "background": "CSS alpha mask removes only white connected to frame edges; interior UI preserved"
+  },
+  "map": {
+    "source": "https://video.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/db6ed768-3de1-4bb5-93b5-17b84f24ddf0/playlist.m3u8",
+    "duration": 6.633333,
+    "webBytes": 252984,
+    "width": 540,
+    "height": 1018,
+    "background": "CSS alpha mask removes only white connected to frame edges; interior UI preserved"
+  },
+  "filter-save": {
+    "source": "https://video.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/ff28e8d0-7bf5-4b86-892d-c9bc05b512fc/playlist.m3u8",
+    "duration": 6.666667,
+    "webBytes": 123026,
+    "width": 540,
+    "height": 1018,
+    "background": "CSS alpha mask removes only white connected to frame edges; interior UI preserved"
+  },
+  "create-event": {
+    "source": "https://video.squarespace-cdn.com/content/v1/643b151a2ed58d2bda00518c/1dd8e045-c402-4fdd-a1a4-40d98e313e22/playlist.m3u8",
+    "duration": 10.433333,
+    "webBytes": 400262,
+    "width": 540,
+    "height": 1020,
+    "background": "CSS alpha mask removes only white connected to frame edges; interior UI preserved"
+  }
+}

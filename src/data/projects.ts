@@ -1,0 +1,7 @@
+export const projects = [
+  { slug: 'mapsocial', name: 'MapSocial', category: 'Social Discovery', color: '#8b5034', motif: 'pins', description: 'Helping UC San Diego students discover events and connect on campus.', role: 'Product Designer', timeline: '4 months', outcome: 'NPS 43 in follow-up feedback', thumbnail: '/images/mapsocial/hero.webp' as string | null, caption: 'A place to find your people.' },
+  { slug: 'instagram-redesign', name: 'Instagram Redesign', category: 'Social Media', color: '#8b5034', motif: 'social', description: 'More control over sharing, watching, and rediscovering content on Instagram.', role: 'UI/UX Designer', timeline: '3 weeks', outcome: '92% reported task success in user testing', thumbnail: '/images/instagram/custom-group-post.webp' as string | null, caption: 'Share with your people. Find it again.' },
+  { slug: 'ringsense', name: 'RingSense', category: 'Accessibility', color: '#8b5034', motif: 'waves', description: 'A wearable concept combining haptic guidance and camera-based tracking to help people use touchscreens independently.', role: 'Role to be added', timeline: 'Timeline to be added', outcome: 'Outcome to be added', thumbnail: '/images/ringsense/showcase.webp' as string | null, caption: 'A different way to feel connected.' },
+] as const;
+export type Project = (typeof projects)[number];
+export const contact = { email: '', linkedin: '', resume: '/resume.pdf' };

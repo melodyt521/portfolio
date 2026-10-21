@@ -1,0 +1,31 @@
+/* Hi-fi palette: Platinum & Orange light theme; After Hours dark theme.
+   Radius rule: circular media controls; 4px for rectangular surfaces.
+   Glass is a CSS material approximation, not an Apple platform API. */
+:root{
+ --paper:#f1f2f3;--surface:#d8dde2;--line:#d1d4d7;--line-strong:#a8adb2;
+ --ink:#17191c;--ink-soft:#484e55;--muted:#62686e;--ink-hover:#393f45;
+ --accent:#ff8a1f;--accent-tint:#fff0e2;--accent-deep:#944600;
+ --font-heading:var(--font-sans),Arial,sans-serif;--font-body:var(--font-sans),Arial,sans-serif;
+ --glass:rgba(248,249,250,.82);--glass-edge:rgba(255,255,255,.8);--shadow:rgba(60,68,77,.12);
+ color-scheme:light;
+}
+:root[data-theme=dark]{
+ --paper:#191c20;--surface:#23272c;--line:#3c4249;--line-strong:#656d76;
+ --ink:#f1f3f5;--ink-soft:#c8d0d8;--muted:#afb5bd;--ink-hover:#d6dbe0;
+ --accent:#ff9a3d;--accent-tint:#3d2c20;--accent-deep:#ff9a3d;
+ --glass:rgba(38,43,49,.9);--glass-edge:rgba(255,255,255,.16);--shadow:rgba(9,13,18,.25);
+ color-scheme:dark;
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){
+ --paper:#191c20;--surface:#23272c;--line:#3c4249;--line-strong:#656d76;--ink:#f1f3f5;--ink-soft:#c8d0d8;--muted:#afb5bd;--ink-hover:#d6dbe0;--accent:#ff9a3d;--accent-tint:#3d2c20;--accent-deep:#ff9a3d;--glass:rgba(38,43,49,.9);--glass-edge:rgba(255,255,255,.16);--shadow:rgba(9,13,18,.25);color-scheme:dark;
+}}
+body{background:var(--paper);color:var(--ink)}
+h1,h2,h3,button,input,a{font-family:var(--font-body)}
+.theme-toggle{flex-shrink:0;display:inline-grid;place-items:center;width:36px;height:36px;border:1px solid var(--line-strong);border-radius:50%;background:var(--glass);color:var(--ink);box-shadow:inset 0 1px var(--glass-edge)}
+.theme-toggle:hover{background:var(--surface)}
+button:active,.case-link:active{transform:scale(.98)}
+a,button{touch-action:manipulation}
+.text-link,.case-link{white-space:nowrap}
+.placeholder-notice,.content-placeholder{color:var(--muted)}
+.case-heading h1,.about-page h1{font-weight:500;letter-spacing:-.055em}
+.case-sections p,.about-copy>p{color:var(--ink-soft)}
