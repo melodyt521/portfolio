@@ -26,7 +26,7 @@
 .record-crate .project-disc.is-selected .disc-label{background:#b8c3cc90}
 .record-crate .project-disc.is-selected .disc-caption strong,.record-crate .project-disc.is-selected .collection-number{color:var(--accent-deep);font-weight:600}
 .record-crate .project-disc:hover .compact-disc{transform:rotate(12deg)}
-.record-crate .collection-arrow{width:13px;height:13px;margin-top:0;color:var(--muted);transition:transform .25s}
+.record-crate .collection-arrow{width:17px;height:17px;margin-top:0;color:var(--muted);transition:transform .25s}
 .record-crate .project-disc:hover .collection-arrow{transform:translate(2px,-2px)}
 .record-crate .is-selected .collection-arrow{transform:rotate(45deg);color:var(--accent-deep)}
 @keyframes changer-disc-seat{0%{transform:rotate(-50deg);filter:brightness(.8)}55%{transform:rotate(8deg);filter:brightness(1.08)}100%{transform:rotate(0);filter:brightness(1)}}
