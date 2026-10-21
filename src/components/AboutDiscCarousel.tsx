@@ -1,8 +1,8 @@
 'use client';
 
-import { useEffect, useRef, useState, type ChangeEvent } from 'react';
+import { useRef, useState } from 'react';
 import Image from 'next/image';
-import { SkipBack, SkipForward, Play, Pause, ImagePlus } from 'lucide-react';
+import { SkipBack, SkipForward, Play, Pause } from 'lucide-react';
 import './about-disc-carousel.css';
 
 type DiscPhoto = { src: string; alt: string; position: string; caption: string; transform?: string };
@@ -25,64 +25,14 @@ const originals: DiscPhoto[] = [
   { src: '/images/about/img_8579.webp', caption: 'A different view of the Manhattan Bridge.', alt: 'Manhattan Bridge framed by a brick archway', position: 'center 53%' },
 ];
 const total = originals.length;
-const openPhotos = () => new Promise<IDBDatabase>((resolve, reject) => {
-  const request = indexedDB.open('melody-photo-discs-curated', 1);
-  request.onupgradeneeded = () => request.result.createObjectStore('photos');
-  request.onsuccess = () => resolve(request.result);
-  request.onerror = () => reject(request.error);
-});
-
 export function AboutDiscCarousel() {
   const [active, setActive] = useState(0);
   const [spinning, setSpinning] = useState(true);
-  const [uploads, setUploads] = useState<Record<number, string>>({});
-  const [error, setError] = useState('');
-  const input = useRef<HTMLInputElement>(null);
-  const urls = useRef<string[]>([]);
   const strip = useRef<HTMLDivElement>(null);
   const drag = useRef({ pointer: -1, start: 0, scroll: 0, moved: false, photo: null as number | null });
   const [dragging, setDragging] = useState(false);
   function select(index: number) { setActive(index); }
   const move = (step: number) => { setActive(value => (value + step + total) % total); };
-
-  useEffect(() => {
-    let cancelled = false;
-    const objectUrls = urls.current;
-    void openPhotos().then(db => {
-      const request = db.transaction('photos').objectStore('photos').openCursor();
-      request.onsuccess = () => {
-        const cursor = request.result;
-        if (cursor && !cancelled) {
-          const url = URL.createObjectURL(cursor.value as Blob);
-          urls.current.push(url);
-          setUploads(value => ({ ...value, [Number(cursor.key)]: url }));
-          cursor.continue();
-        } else db.close();
-      };
-    }).catch(() => {});
-    return () => { cancelled = true; objectUrls.forEach(url => URL.revokeObjectURL(url)); };
-  }, []);
-
-  async function addPhoto(event: ChangeEvent<HTMLInputElement>) {
-    const file = event.target.files?.[0];
-    event.target.value = '';
-    if (!file) return;
-    if (!file.type.startsWith('image/')) { setError('Choose an image file.'); return; }
-    const index = active;
-    try {
-      const db = await openPhotos();
-      await new Promise<void>((resolve, reject) => {
-        const transaction = db.transaction('photos', 'readwrite');
-        transaction.objectStore('photos').put(file, index);
-        transaction.oncomplete = () => { db.close(); resolve(); };
-        transaction.onerror = () => { db.close(); reject(transaction.error); };
-      });
-      const url = URL.createObjectURL(file);
-      urls.current.push(url);
-      setUploads(value => ({ ...value, [index]: url }));
-      setError('');
-    } catch { setError('This browser could not save the photo. Please try again.'); }
-  }
 
   return <section className={`about-discs section-shell${spinning ? '' : ' is-motion-paused'}`} aria-label="Photo disc carousel" aria-roledescription="carousel" onKeyDown={event => {
     if (event.target instanceof HTMLInputElement) return;
@@ -136,9 +86,9 @@ export function AboutDiscCarousel() {
         let offset = (index - active + total) % total;
         if (offset > total / 2) offset -= total;
         const visible = Math.abs(offset) <= 2;
-        const photo: DiscPhoto = uploads[index] ? { src: uploads[index], alt: `Melody’s photo, disc ${index + 1}`, position: 'center 55%', caption: 'Another moment on repeat.' } : original;
+        const photo = original;
         return <button key={original.src} data-photo-index={index} className={`about-photo-disc${index === active ? ' is-current' : ''}`} style={{ '--offset': offset, '--distance': Math.abs(offset), zIndex: total - Math.abs(offset), visibility: visible ? 'visible' : 'hidden' } as React.CSSProperties} tabIndex={visible ? 0 : -1} aria-label={`View photo ${index + 1}${index === active ? ', selected' : ''}`} aria-current={index === active ? 'true' : undefined} aria-describedby={index === active ? 'photo-disc-caption' : undefined} onClick={event => { if (event.detail === 0) select(index); }}>
-          <span className="photo-disc-face"><Image src={photo.src} alt={photo.alt} style={{ objectPosition: photo.position, transform: photo.transform }} width={600} height={600} sizes="(max-width:600px) 265px, 440px" unoptimized={photo.src.startsWith('blob:')} draggable={false}/></span>
+          <span className="photo-disc-face"><Image src={photo.src} alt={photo.alt} style={{ objectPosition: photo.position, transform: photo.transform }} width={600} height={600} sizes="(max-width:600px) 265px, 440px" draggable={false}/></span>
           <span className="photo-disc-hub" aria-hidden="true"/>
           <span className="photo-disc-number" aria-hidden="true">SIDE {String(index + 1).padStart(2, '0')}</span>
         </button>;
@@ -153,6 +103,5 @@ export function AboutDiscCarousel() {
       </div>
       <div className="photo-disc-progress"><input type="range" min={0} max={total - 1} step={1} value={active} onChange={event => select(Number(event.target.value))} aria-label="Photo progress" aria-valuetext={`Photo ${active + 1} of ${total}`} style={{ '--photo-progress': `${total > 1 ? active / (total - 1) * 100 : 100}%` } as React.CSSProperties}/></div>
     </div>
-    <div className="about-discs-upload"><button className="text-link" onClick={() => input.current?.click()}><ImagePlus size={16}/>{uploads[active] || originals[active] ? 'Change this photo' : 'Add a photo'}</button><p>Added photos stay in this browser.</p><input ref={input} type="file" accept="image/*" onChange={addPhoto} aria-label="Choose a photo for the selected disc" hidden/>{error && <p role="alert">{error}</p>}</div>
   </section>;
 }

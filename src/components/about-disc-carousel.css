@@ -16,9 +16,6 @@
 .photo-disc-pagination button{width:22px;height:36px;display:grid;place-items:center;padding:0;background:transparent}
 .photo-disc-pagination span{display:block;width:5px;height:5px;background:var(--muted);border-radius:50%;transition:background .2s,transform .2s}
 .photo-disc-pagination [aria-current=true] span{background:var(--accent);transform:scale(1.6)}
-.about-discs-upload{border-top:1px solid var(--line);display:flex;flex-direction:column;align-items:center;padding:14px 0 0;gap:8px}
-.about-discs-upload .text-link{background:transparent;color:var(--ink);font-size:11px}
-.about-discs-upload p{color:var(--muted);font-size:11px;line-height:1.5}
 
 
 
