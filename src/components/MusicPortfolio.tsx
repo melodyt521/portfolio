@@ -23,7 +23,7 @@ function PreviewDetails({ project, roleOnly = false }: { project: Project | type
 }
 function Player({ selected, playing, onToggle }: { selected: number; playing: boolean; onToggle: () => void }) {
  return <div className={`realistic-player ${playing ? 'playing' : 'paused'}`}>
- <Image src="/images/player-clean-plate.png" alt="" width={1536} height={1024} priority unoptimized className="player-render" />
+ <Image src="/images/player-smooth-plate.png" alt="" width={1536} height={1024} priority unoptimized className="player-render" />
  <div className="empty-platter"/>
  <div className="rotating-disc-plane"><div className={`whole-disc ${playing ? 'playing' : ''}`}><Image src={`/images/discs/${collectionProjects[selected].slug}.svg`} alt="" width={512} height={512} className="turntable-disc-image" unoptimized/></div></div>
  <span className="tonearm-rest"/>
