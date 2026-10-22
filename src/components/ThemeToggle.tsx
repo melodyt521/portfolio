@@ -2,18 +2,9 @@
 import { useEffect, useState } from 'react';
 import { Moon, Sun } from 'lucide-react';
 export function ThemeToggle() {
- const [dark, setDark] = useState(false);
+ const [dark, setDark] = useState(true);
  useEffect(() => {
-  const media = window.matchMedia('(prefers-color-scheme: dark)');
-  const sync = () => {
-   let saved: string | null = null;
-   try { saved = localStorage.getItem('melody-theme'); } catch {}
-   const value = saved ? saved === 'dark' : media.matches;
-   document.documentElement.dataset.theme = value ? 'dark' : 'light';
-   setDark(value);
-  };
-  sync(); media.addEventListener('change', sync);
-  return () => media.removeEventListener('change', sync);
+  setDark(document.documentElement.dataset.theme !== 'light');
  }, []);
  return <button className="theme-toggle" aria-label={dark ? 'Switch to light theme' : 'Switch to dark theme'} onClick={() => {
   const next = !dark; setDark(next);
