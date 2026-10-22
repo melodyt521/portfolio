@@ -8,5 +8,9 @@ import './globals.css';
 import './page-cursors.css';
 import './theme.css';
 import '@/components/experience.css';
-export const metadata: Metadata = { title: { default: 'Melody Tai - Good Design, On Repeat', template: '%s - Melody Tai' }, description: 'Product designer and UX researcher. Pick a disc and explore selected work by Melody Tai.' };
+export const metadata: Metadata = {
+ metadataBase: new URL('https://melodytai.com'),
+ title: { default: 'Melody Tai | Product Designer', template: '%s | Melody Tai' },
+ description: 'A product designer who designs with people in mind. Explore my work in product design, user experience, and accessibility.',
+};
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <html className={`${sans.variable} ${mono.variable}`} lang="en" data-scroll-behavior="smooth" data-theme="dark" suppressHydrationWarning><head><script dangerouslySetInnerHTML={{ __html: "try{var theme=localStorage.getItem('melody-theme');if(theme==='light'||theme==='dark')document.documentElement.dataset.theme=theme}catch{}" }}/></head><body><a href="#main" className="skip-link">Skip to content</a><div id="top" /><ProjectMusicProvider><Navbar />{children}</ProjectMusicProvider></body></html>; }
